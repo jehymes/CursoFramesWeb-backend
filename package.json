@@ -4,25 +4,25 @@
   "description": "",
   "main": "loader.js",
   "scripts": {
-    "dev": "nodemon src/loader.js",
+    "dev": "nodemon src/loader.js --trace-warnings",
     "production": "pm2 start src/loader.js --name backend"
   },
   "author": "Jehymeson Gil",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.0.0",
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "express-query-int": "^1.0.1",
-    "jsonwebtoken": "^7.3.0",
-    "lodash": "^4.17.2",
-    "mongoose": "^5.11.17",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-query-int": "^3.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.11.18",
     "mongoose-paginate": "^5.0.3",
-    "node-restful": "^0.2.5",
-    "pm2": "^2.1.5"
+    "node-restful": "^0.2.6",
+    "pm2": "^4.5.5"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^2.0.7"
   },
   "engines": {
     "node": ">=14.15.4"
