@@ -3,12 +3,14 @@ const port = process.env.PORT
 const bodyParser = require('body-parser')
 const express = require('express')
 const server = express()
-const allowCors = require('./cors')
+// const allowCors = require('./cors')
+const cors = cors();
 const queryParser = require('express-query-int')
 
 server.use(bodyParser.urlencoded({ extended: true }))
 server.use(bodyParser.json())
-server.use(allowCors)
+// server.use(allowCors)
+server.use(cors);
 server.use(queryParser())
 
 server.listen(port, function() {
