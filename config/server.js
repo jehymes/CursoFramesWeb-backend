@@ -7,11 +7,11 @@ const server = express()
 const cors = require('cors');
 const queryParser = require('express-query-int')
 
-server.use(bodyParser.urlencoded({ extended: true }))
+server.use(bodyParser.urlencoded({ extended: false }))
 server.use(bodyParser.json())
 // server.use(allowCors)
-server.use(cors());
 server.use(queryParser())
+server.use(cors());
 
 server.listen(port, function() {
   console.log(`BACKEND is running on port ${port}.`)
